@@ -1,3 +1,13 @@
+#A janky R script for performing Levey-Jennings analysis on luminex CSV files. Should setwd as the dir with the CSVs in it. 
+
+library(plyr)
+library(drc)
+library(ggplot2)
+library(sjPlot)
+library(tidyverse)
+library(data.tables)
+library(dpylr)
+
 #list files in set directory and import
 file_list <- list.files(pattern = "*.csv")
 #first import the serialnumber of the device
